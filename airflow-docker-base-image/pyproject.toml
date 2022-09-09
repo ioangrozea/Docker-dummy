@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "lol"
+version = "0.1.0"
+description = ""
+authors = ["Maciej Opala <maciej.opala@bolt.eu>"]
+
+[tool.poetry.dependencies]
+python = "~3.9"
+apache-airflow = { version = "2.3.3", extras = ["amazon", "crypto", "celery", "postgres", "hive", "jdbc", "mysql", "ssh", "slack", "statsd"] }
+prometheus_client = "^0.8.0"
+isodate = "0.6.1"
+dacite = "1.6.0"
+sqlparse = "^0.3.1"
+python3-openid = "^3.1.0"
+flask-appbuilder = ">=3.4.3"
+alembic = ">=1.7.7"
+apache-airflow-providers-google = "^8.1.0"
+apache-airflow-providers-databricks = "^3.0.0"
+apache-airflow-providers-amazon = "^4.0.0"
+pendulum = "^2.1.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
